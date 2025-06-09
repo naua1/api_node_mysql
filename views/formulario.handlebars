@@ -1,0 +1,46 @@
+<main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3" > 
+                
+          
+                
+                {{>mensagens}}
+                
+                
+                               <!--envia os arquivos para a rotan-->
+                <form action="/cadastrar" method="post" enctype="multipart/form-data" >
+                    <input type="text" name="nome" class="form-control" placeholder="Nome Do Produto">
+                    <input type="text" name="valor" class="form-control" placeholder="Valor Do Produto">
+                    <input type="file" name="imagem" class="form-control" >
+                    <input type="submit" class="btn btn-primary" value="cadastrar">
+                </form>
+
+                 <div class="container">
+                     <div class="row">
+
+                        <!--Para cada item dentro do array produtos, repita o bloco abaixo.”-->
+                        {{#each produtos}}
+                         <div class="col-12 col-sm-6 col-md-4 col-lg-3" >       
+                            <div class="card">
+                                <img src="../imagem/{{imagem}}" alt="">
+
+                                <div class="texto">
+                                    <p>{{nome}}</p>
+                                    <p>${{valor}}</p>
+                                </div>
+                                
+                                <a href="/atualizarFormulario/{{codigo}}" class="btn btn-warning">altera</a>
+                                <a href="/remove/{{codigo}}&{{imagem}}" class="btn btn-danger">remover</a>
+                            </div>        
+                
+                
+                         </div>
+                        {{/each}}
+
+                  
+        </div>
+    </div>
+
+</main>

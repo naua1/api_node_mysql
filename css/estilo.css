@@ -1,0 +1,40 @@
+form{
+
+    margin-top: 30px;
+
+}
+
+.card img{
+
+    width: 110px;
+    margin-bottom: 40px;
+}
+
+form input{
+
+    margin-bottom: 10px;
+    
+}
+
+.card{
+    height: 350px;
+    display: flex;
+  justify-content: center;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+.texto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card a{
+
+    margin-top:5px;
+}
+
+.alert{
+
+    margin-top: 30px;
+}

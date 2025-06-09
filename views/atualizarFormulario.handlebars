@@ -1,0 +1,24 @@
+<main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3" >                <!--envia os arquivos para a rotan-->
+                <form action="/atualizar" method="post" enctype="multipart/form-data" >
+                    
+                   
+
+                    <input type="hidden" name="codigo"  value="{{produtos.codigo}}">
+
+                     <img src="../imagem/{{produtos.imagem}}">
+                     <input type="hidden" name="nomeImagem" value="{{produtos.imagem}}">
+                    <input type="text" name="nome"  value="{{produtos.nome}}" class="form-control" placeholder="Nome Do Produto">
+                    <input type="text" name="valor"  value="{{produtos.valor}}" class="form-control" placeholder="Valor Do Produto">
+                    <input type="file" name="imagem"  class="form-control" >
+                    <input type="submit" class="btn btn-primary" value="atualizar">
+                    <a href="/" class="btn btn-secondary">cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
