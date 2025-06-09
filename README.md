@@ -101,8 +101,7 @@ Acesse a aplicação em: [http://localhost:3000](http://localhost:3000)
 
 - As imagens são salvas na pasta `/imagem`.
 - O projeto utiliza rotas como `/okCadastro`, `/falhaAtualizar`, etc., para indicar o status das operações.
----
-![Uploading fotoHome.PNG…]()
+
 
 ---
 
