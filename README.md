@@ -38,7 +38,8 @@ projeto/
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seu-usuario/seu-repositorio.git![fotoHome](https://github.com/user-attachments/assets/0a58bca2-9d64-4cca-8184-4f5015933789)
+
 cd seu-repositorio
 ```
 
@@ -100,6 +101,8 @@ Acesse a aplicação em: [http://localhost:3000](http://localhost:3000)
 
 - As imagens são salvas na pasta `/imagem`.
 - O projeto utiliza rotas como `/okCadastro`, `/falhaAtualizar`, etc., para indicar o status das operações.
+---
+![Uploading fotoHome.PNG…]()
 
 ---
 
